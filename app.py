@@ -40,4 +40,4 @@ demo = gr.Interface(
     description = "Ask a question to get a simple explanation from AI along with analogies and real world examples"
 )
 
-demo.launch(debug = True)
+demo.launch(server_name="0.0.0.0", server_port=int(os.environ.get("PORT", 7860)))
